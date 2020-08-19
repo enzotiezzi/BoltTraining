@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1893448595, guid: a040fb66244a7f54289914d98ea4ef7d, type: 3}
+  m_Name: GetMovement
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"$content":"","$type":"System.String"},"_type":"System.String","key":"Axis","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[{"_type":"System.Single","key":"Movement","label":null,"summary":null,"hideLabel":false}],"title":null,"summary":null,"pan":{"x":179.7277,"y":57.26732},"zoom":0.5999999,"elements":[{"chainable":false,"member":{"name":"GetAxis","parameterTypes":["System.String"],"targetType":"UnityEngine.Input","targetTypeName":"UnityEngine.Input","$version":"A"},"defaultValues":{"%axisName":{"$content":"","$type":"System.String"}},"position":{"x":-224.0,"y":-142.0},"guid":"e3abad07-3572-489e-b388-00d0397af37a","$version":"A","$type":"Bolt.InvokeMember","$id":"11"},{"defaultValues":{},"position":{"x":11.0,"y":7.0},"guid":"a1da3420-6d99-4c74-a276-d269310765a7","$version":"A","$type":"Bolt.GenericMultiply","$id":"14"},{"specifyFallback":false,"kind":"Object","defaultValues":{"name":{"$content":"speed","$type":"System.String"},"object":null},"position":{"x":-219.0,"y":34.0},"guid":"96950a14-8437-4d24-a949-27ddab5043d9","$version":"A","$type":"Bolt.GetVariable","$id":"16"},{"defaultValues":{},"position":{"x":412.0,"y":2.0},"guid":"9532f668-7190-40a4-b028-7c223f798957","$version":"A","$type":"Bolt.GraphOutput","$id":"18"},{"defaultValues":{},"position":{"x":-424.0,"y":-7.0},"guid":"908db324-e969-45c1-b6bb-2d25658dbed1","$version":"A","$type":"Bolt.GraphInput","$id":"20"},{"sourceUnit":{"$ref":"11"},"sourceKey":"result","destinationUnit":{"$ref":"14"},"destinationKey":"a","guid":"0f5836eb-ebda-46cf-b167-f5cdf32563e7","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"value","destinationUnit":{"$ref":"14"},"destinationKey":"b","guid":"f487f942-f247-46c0-999b-0ce74a38bcd8","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"product","destinationUnit":{"$ref":"18"},"destinationKey":"Movement","guid":"a11323fb-64af-45d2-89e7-42e3e79593ef","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"20"},"sourceKey":"Axis","destinationUnit":{"$ref":"11"},"destinationKey":"%axisName","guid":"ec4a585c-e268-4260-afa4-c85e85e136ef","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
